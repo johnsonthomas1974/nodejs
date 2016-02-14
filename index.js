@@ -11,7 +11,7 @@ app.post('/soapHello', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-  res.send('++++ Hello world ++++ Message Changed++ \n');
+  res.send('++++ Hello world ++++ \n');
 });
 app.listen(PORT);
 console.log('Running on http://localhost:' + PORT);
