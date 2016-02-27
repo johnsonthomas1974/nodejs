@@ -12,7 +12,7 @@ app.post('/soapHello', function (req, res) {
 
 app.get('/', function (req, res) {
   console.log(' I am going to print hello world :: ' + getDateTime());
-  res.send('HELLO WORLD\n');
+  res.send('HELLO WORLD -- version 1.1 \n');
 });
 app.listen(PORT);
 console.log('Running on http://localhost:' + PORT);
