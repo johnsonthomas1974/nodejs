@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
   res.send('HELLO WORLD -- version 1.2 \n');
 });
 app.get('/down', function (req, res) {
-  throw new Error('generated error')
+  process.exit();
 });
 app.listen(PORT);
 console.log('Running on http://localhost:' + PORT);
