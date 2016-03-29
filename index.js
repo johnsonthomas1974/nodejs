@@ -14,6 +14,9 @@ app.get('/', function (req, res) {
   console.log(' I am going to print hello world :: ' + getDateTime());
   res.send('HELLO WORLD -- version 1.2 \n');
 });
+app.get('/down', function (req, res) {
+  throw new Error('generated error')
+});
 app.listen(PORT);
 console.log('Running on http://localhost:' + PORT);
 function getDateTime() {
